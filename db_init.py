@@ -4,7 +4,6 @@ import json
 def init_db():
     
     conn = sql.connect("talentScout.db")
-
     cursor = conn.cursor()
 
     drop_query = '''DROP TABLE IF EXISTS Job'''

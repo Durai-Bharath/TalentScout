@@ -1,7 +1,7 @@
 import sqlite3 as sql
 import json
 
-db_path = r"DB_Init\talentScout.db"
+db_path = "talentScout.db"
 
 def updateScore(user_id,score):
     conn = sql.connect(db_path)

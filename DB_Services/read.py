@@ -1,7 +1,7 @@
 import sqlite3 as sql
 import json
 
-db_path = r"DB_Init\talentScout.db"
+db_path = "talentScout.db"
 
 def getJobById(job_id):
     conn = sql.connect(db_path)
@@ -13,6 +13,7 @@ def getJobById(job_id):
 
 
 def getUserById(user_id):
+    print(user_id)
     conn = sql.connect(db_path)
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM user WHERE id=?", (user_id,))
@@ -41,7 +42,7 @@ def getSkillsByJobId(job_id):
 def getAllUsers():
     conn = sql.connect(db_path)
     cursor = conn.cursor()
-    cursor.execute("SELECT u.name,u.email,u.phone,u.yoe,u.location,j.job_name,u.score FROM user u JOIN Job j ON u.job_id = j.job_id where u.score > 0 ORDER BY u.score DESC") 
+    cursor.execute("SELECT u.name,u.email,u.phone,u.yoe,u.location,j.job_name,u.score FROM user u JOIN Job j ON u.job_id = j.job_id ORDER BY u.score DESC") 
     users = cursor.fetchall()
     conn.close()
     return users

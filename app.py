@@ -7,7 +7,7 @@ from Stages.botInterview import botInterview
 from Stages.leaderBoard import leaderboard
 from DB_Services.read import getJobOpening
 import json
-from DB_Init.db_init import init_db
+from db_init import init_db
 
 
 if "db_initialized" not in st.session_state:
