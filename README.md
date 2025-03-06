@@ -1,6 +1,6 @@
 # 📌 TalentScout - AI-Powered Screening Chatbot  
 
-![TalentScout Banner]([https://via.placeholder.com/1200x400?text=TalentScout](https://github.com/Durai-Bharath/TalentScout/blob/main/Banner/banner.png))  
+![TalentScout Banner]([https://via.placeholder.com/1200x400?text=TalentScout](https://github.com/Durai-Bharath/TalentScout/blob/main/Banner/banner.png])  
 
 🚀 **TalentScout** is an AI-powered **screening chatbot** designed to streamline the **technical hiring process**. It dynamically generates **skill-based interview questions**, evaluates candidate responses using **vector similarity**, and provides an **automated assessment score**.  
 
