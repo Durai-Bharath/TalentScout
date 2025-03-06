@@ -1,11 +1,9 @@
 import requests
-import os
-from dotenv import load_dotenv
 import json
+import streamlit as st
 
-load_dotenv()
-
-OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+# OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+OPENROUTER_API_KEY = st.secrets["api"]["OPENROUTER_API_KEY"]
 
 def get_learning_req(question):
     content = """

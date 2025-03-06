@@ -1,15 +1,14 @@
 from sentence_transformers import SentenceTransformer, util
 import requests
-import os
-from dotenv import load_dotenv
 import json
 import torch
-
+import streamlit as st
 torch.classes.__path__ = []
 
-load_dotenv()
+# load_dotenv()
 
-OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+# OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
+OPENROUTER_API_KEY = st.secrets["api"]["OPENROUTER_API_KEY"]
 
 
 def getRelevantAnswer(prompt):
