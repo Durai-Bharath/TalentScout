@@ -1,6 +1,6 @@
 # 📌 TalentScout - AI-Powered Screening Chatbot  
 
-![TalentScout Banner]([https://github.com/Durai-Bharath/TalentScout/blob/main/Banner/banner.png])  
+![TalentScout Banner](https://github.com/Durai-Bharath/TalentScout/raw/main/Banner/banner.png)
 
 🚀 **TalentScout** is an AI-powered **screening chatbot** designed to streamline the **technical hiring process**. It dynamically generates **skill-based interview questions**, evaluates candidate responses using **vector similarity**, and provides an **automated assessment score**.  
 
@@ -48,7 +48,38 @@ Ensure you have the following installed:
 - **Python 3.8+**  
 - **pip** (Python package manager)  
 
-### 📥 Clone the Repository  
+### 1️⃣ Clone the Repository  
 ```sh
 git clone https://github.com/Durai-Bharath/TalentScout.git
 cd TalentScout
+```
+
+### 2️⃣ Create a Virtual Environment  
+```sh
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate    # Windows
+```
+
+
+### 3️⃣ Install Dependencies  
+```sh
+pip install -r requirements.txt
+```
+
+### 4️⃣ Initialize the Database
+```sh
+python init_db.py
+```
+### 5️⃣ Run the Application
+```sh
+streamlit run app.py
+```
+
+## 🚀 Future Enhancements  
+
+✅ **Support for multiple LLM models** (including self-hosted models)  
+✅ **Integration with ATS (Applicant Tracking System)**  
+✅ **Improved NLP-based answer evaluation**  
+✅ **Adaptive difficulty & question weighting system**  
+
