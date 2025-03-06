@@ -7,8 +7,13 @@ from Stages.botInterview import botInterview
 from Stages.leaderBoard import leaderboard
 from DB_Services.read import getJobOpening
 import json
+from DB_Init.db_init import init_db
 
 
+if "db_initialized" not in st.session_state:
+    init_db()
+    st.session_state.db_initialized = True
+    
 # Initialize session state for job selection and user
 if "job_id" not in st.session_state:
     st.session_state.job_id = None
@@ -136,3 +141,5 @@ def Home():
     st.markdown("---")  # Add a separator for better UI
 if st.session_state.job_id is None:
     Home()
+    
+
